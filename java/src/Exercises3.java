@@ -4,14 +4,6 @@ public class Exercises3 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
-        //ex 23
-        System.out.println("Sisesta punktiga number: ");
-        double number = Double.parseDouble(reader.nextLine());
-
-        if (number < -30 | number < 41) {
-            System.out.println(number);
-        }
-
 
  /*// ex 22 küsib parooli senikaua kuni on õige
         System.out.println("Sinu parool: ");
