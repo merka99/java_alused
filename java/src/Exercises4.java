@@ -11,6 +11,7 @@ public class Exercises4 {
 
         int sum = 0;
         int num = 1;
+
         while (num <= i) {
             sum += num;  // this is the same as result = result + 3;
             num++;          // means the same as i = i+1;
