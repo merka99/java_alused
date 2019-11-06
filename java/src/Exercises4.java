@@ -1,8 +1,80 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class Exercises4 {
+
     public static void main(String[] args) {
-        Scanner reader = new Scanner(System.in);
+
+    Scanner reader = new Scanner(System.in);
+    int numberDrawn = drawNumber();
+
+    // program your solution here. Do not touch the above lines!
+
+    int guessesMAde = 0;
+        while (true) {
+        System.out.print("Guess a number: ");
+        int guess = Integer.parseInt(reader.nextLine());
+        guessesMAde++;
+
+        if (guess == numberDrawn) {
+            break;
+        } else if (guess < numberDrawn) {
+            System.out.println("The number is greater, guesses made: " + guessesMAde);
+        } else {
+            System.out.println("The number is lesser, guesses made: " + guessesMAde);
+        }
+    }
+
+        System.out.println("Congratulations, your guess is correct!");
+}
+
+    private static int drawNumber() {
+        return new Random().nextInt(101);
+
+
+    /*
+        public static void printText() {
+            System.out.println("In the beginning there were the swamp, the hoe and Java.");
+        }
+
+        public static void main(String[] args) {
+            Scanner reader = new Scanner(System.in);
+            System.out.println("mitu korda?");
+            int kord = Integer.parseInt(reader.nextLine());
+            while (kord > 0) {
+                kord--;
+                printText();
+            }
+
+
+            /* Scanner reader = new Scanner(System.in);
+
+            int sum = 0;
+            int numbers = 0;
+            int even = 0;
+
+            System.out.println("Type numbers:");
+            while (true) {
+                int number = Integer.parseInt(reader.nextLine());
+                if (number == -1) {
+                    break;
+                }
+
+                sum += number;
+                numbers++;
+                if (number % 2 == 0) {
+                    even++;
+                }
+            }
+
+            double average = (double) sum / numbers;
+            int odd = numbers - even;
+            System.out.println("Thank you and see you later!");
+            System.out.println("The sum is " + sum);
+            System.out.println("How many numbers: " + numbers);
+            System.out.println("Average: " + average);
+            System.out.println("Even numbers: " + even);
+            System.out.println("Odd numbers: " + odd);
 
 
 
