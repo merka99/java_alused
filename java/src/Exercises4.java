@@ -6,6 +6,45 @@ public class Exercises4 {
 
 
 
+       /* System.out.print("Sisesta nr: ");
+        int n = Integer.parseInt(reader.nextLine());
+        int tulemus = 0;
+
+        int number = 0;
+        while (number <= n) {
+            int ruut = (int) Math.pow(2, number);
+            tulemus = tulemus + ruut;
+            number++;
+        }
+
+        System.out.println("tulemus " + tulemus);*/
+
+    /* System.out.println("Sisesta number: ");
+        int i = Integer.parseInt(reader.nextLine());
+        int korrutis = 1;
+
+        int number = 1;
+        while (number <= i) {
+            korrutis *= number;
+            number++;
+        }
+        System.out.println("tulemus: " + korrutis);
+*/
+        /*
+        System.out.println("Sisesta esimene arv: ");
+        int i1 = Integer.parseInt(reader.nextLine());
+        System.out.println("Sisesta teine arv: ");
+        int i2 = Integer.parseInt(reader.nextLine());
+
+        int summa = 0;
+
+        while (i1 <= i2) {
+            summa += i1;  // this is the same as result = result + 3;
+            i1++;          // means the same as i = i+1;
+        }
+        System.out.println("Summa on:" + summa);
+*/
+
       /*  System.out.println("Sisesta arv: ");
         int i = Integer.parseInt(reader.nextLine());
 
