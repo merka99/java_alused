@@ -5,7 +5,7 @@ import java.util.Collections;
 public class Exercises5 {
 
     /*
-    public static int countItems(ArrayList<String> list) {
+    public static int countItems(ArrayList<String> list)  {
         return list.size();
     }
     public static void main(String[] args) {
