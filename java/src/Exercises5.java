@@ -4,79 +4,6 @@ import java.util.Collections;
 
 public class Exercises5 {
 
-    public static boolean moreThanOnce(ArrayList<Integer> list, int number) {
-        int howMany = 0;
-        for (int numbrid : list) {
-            if (numbrid == number) {
-                howMany = howMany + 1;
-            }
-
-            if (howMany > 1) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public static void main(String[] args) {
-        Scanner reader = new Scanner(System.in);
-
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        list.add(3);
-        list.add(2);
-        list.add(7);
-        list.add(2);
-
-        System.out.println("Type a number: ");
-        int number = Integer.parseInt(reader.nextLine());
-        if (moreThanOnce(list, number)) {
-            System.out.println(number + " appears more than once.");
-        } else {
-            System.out.println(number + " does not appear more than once.");
-        }
-
-    /*
-    public static int greatest(ArrayList<Integer> list) {
-        int suurim1 = list.get(0);
-        for (int suur : list) {
-            if (suur > suurim1) {
-                suurim1 = suur;
-            }
-        }
-        return suurim1;
-    }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        list.add(3);
-        list.add(2);
-        list.add(10);
-        list.add(2);
-
-        System.out.println("The greatest number is: " + greatest(list));
-
-    /* public static void removeLast(ArrayList<String> brothers) {
-        int viimanenimi = brothers.size() -1 ;
-        brothers.remove(viimanenimi);
-    }
-    public static void main(String[] args) {
-        ArrayList<String> brothers = new ArrayList<String>();
-        brothers.add("Dick");
-        brothers.add("Henry");
-        brothers.add("Michael");
-        brothers.add("Bob");
-
-        System.out.println("brothers:");
-        System.out.println(brothers);
-
-// sorting brothers
-        Collections.sort(brothers);
-
-        // removing the last item
-        removeLast(brothers);
-
-        System.out.println(brothers);
-
     /*
     public static int countItems(ArrayList<String> list) {
         return list.size();
@@ -223,5 +150,4 @@ public class Exercises5 {
         System.out.println("Average: " + result);
         */
 
-    }
 }
